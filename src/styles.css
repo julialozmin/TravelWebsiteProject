@@ -1,9 +1,11 @@
 :root {
-  --primary-color: #272044;
+  --primary-color: rgb(40, 33, 69);
+  --secondary-color: #f8f8f8;
+  --primary-font: poppins;
 }
 
 body {
-  font-family: poppins;
+  font-family: var(--primary-font);
 }
 
 h1 {
@@ -15,12 +17,14 @@ h2 {
   font-size: 40px;
   font-weight: 700;
   line-height: 50px;
+  margin: 0 auto;
 }
 
 h3 {
   font-size: 24px;
   font-weight: 700;
   line-height: 36px;
+  margin: 0 0 8px;
 }
 
 h4 {
@@ -28,16 +32,19 @@ h4 {
   font-weight: 700;
   letter-spacing: 5px;
   opacity: 0.3;
+  margin: 0 0 7px;
 }
 
 h5 {
   font-size: 20px;
   font-weight: 700;
   line-height: normal;
+  margin: 0px 0px 16px;
 }
 p {
   align-self: stretch;
   opacity: 0.7;
+  margin: 0 auto;
 }
 button {
   font-size: 14px;
@@ -46,30 +53,93 @@ button {
   padding: 16px 32px 16px 32px;
 }
 
+img {
+  object-fit: cover;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.7;
+  font-weight: 400px;
+}
+
 footer {
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
-  grid-gap: 20px;
+  max-height: 334px;
+  background-image: linear-gradient(
+      rgba(40, 33, 69, 0.9),
+      rgba(40, 33, 69, 0.9)
+    ),
+    url("/images/chris-czermak-7ybKmhDTcz0-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .hero {
   text-align: center;
+  padding: 286px 0px 289px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/images/chris-czermak-7ybKmhDTcz0-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
 }
+
+.hero h4,
+.hero h1 {
+  margin: 0 auto;
+}
+
 .hero h2 {
   font-weight: 400;
+  margin: 0px 0px 32px;
 }
 .hero h4 {
   font-size: 24px;
   font-weight: bold;
 }
 
-.item {
-  width: 370px;
+.container {
+  padding: 100px 0px 100px 0px;
+  max-width: 1170px;
+  margin: 0 auto;
+  color: var(--primary-color);
+}
+
+.description-section,
+.gallery-section {
+  background-color: var(--secondary-color);
+}
+
+.description-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 64px;
+}
+
+.description-grid img {
+  width: 570px;
+  height: 431px;
+}
+
+.eating-section h4,
+.eating-section h2,
+.gallery-section h4,
+.gallery-section h2 {
+  text-align: center;
 }
 
 .food-box {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  margin-top: 50px;
 }
 
 .photo-map {
@@ -82,21 +152,43 @@ footer {
   width: 185px;
 }
 
-.photo-map img {
-  object-fit: cover;
+.food-details {
+  margin: 24px 32px 24px 32px;
 }
 
-.restaurant-address {
+.food-description {
+  margin: 0 0 24px;
+}
+
+.food-details button {
+  display: block;
+  margin: 0 auto;
+}
+
+.title {
   font-size: 13px;
+  font-weight: bold;
   line-height: 20px;
+  margin: 0px 0px 8px;
 }
 
 .gallery-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  margin-top: 50px;
 }
 
 .photo img {
   height: 370px;
   width: 370px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 20px;
+  padding: 100px 0px 100px;
+  color: white;
+  grid-gap: 64px;
 }
