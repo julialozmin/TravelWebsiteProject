@@ -24,16 +24,16 @@ h3 {
 }
 
 h4 {
-  font-size: 24px;
-  font-weight: bold;
-  letter-spacing: 5px;
-}
-
-h5 {
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 5px;
   opacity: 0.3;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
 }
 p {
   align-self: stretch;
@@ -58,13 +58,45 @@ footer {
 .hero h2 {
   font-weight: 400;
 }
+.hero h4 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.item {
+  width: 370px;
+}
 
 .food-box {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.photo-map {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.photo-map img,
+.photo-map iframe {
+  height: 185px;
+  width: 185px;
+}
+
+.photo-map img {
+  object-fit: cover;
+}
+
+.restaurant-address {
+  font-size: 13px;
+  line-height: 20px;
+}
+
 .gallery-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.photo img {
+  height: 370px;
+  width: 370px;
 }
