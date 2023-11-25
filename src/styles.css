@@ -41,11 +41,13 @@ h5 {
   line-height: normal;
   margin: 0px 0px 16px;
 }
+
 p {
   align-self: stretch;
   opacity: 0.7;
   margin: 0 auto;
 }
+
 button {
   font-size: 14px;
   font-weight: 700;
@@ -89,12 +91,10 @@ footer {
   background-position: center;
   color: white;
 }
-
 .hero h4,
 .hero h1 {
   margin: 0 auto;
 }
-
 .hero h2 {
   font-weight: 400;
   margin: 0px 0px 32px;
@@ -102,6 +102,9 @@ footer {
 .hero h4 {
   font-size: 24px;
   font-weight: bold;
+}
+.hero a {
+  color: black;
 }
 
 .container {
@@ -115,16 +118,14 @@ footer {
 .gallery-section {
   background-color: var(--secondary-color);
 }
-
 .description-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 64px;
 }
-
 .description-grid img {
-  width: 570px;
-  height: 431px;
+  max-width: 570px;
+  max-height: 431px;
 }
 .description-grid p {
   margin-top: 18px;
@@ -150,18 +151,16 @@ footer {
 }
 .photo-map img,
 .photo-map iframe {
-  height: 185px;
-  width: 185px;
+  max-height: 185px;
+  max-width: 185px;
 }
 
 .food-details {
   margin: 24px 32px 24px 32px;
 }
-
 .food-description {
   margin: 0 0 24px;
 }
-
 .food-details button {
   display: block;
   margin: 0 auto;
@@ -194,4 +193,107 @@ footer {
   padding: 100px 0px 100px;
   color: white;
   grid-gap: 64px;
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 48px;
+    line-height: 70px;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  footer {
+    padding: 0px 15px 0px 15px;
+  }
+
+  .hero {
+    padding: 186px 0px 189px;
+  }
+
+  .container {
+    padding: 60px 0px 60px 0px;
+    max-width: 600px;
+  }
+
+  .description-section {
+    padding-bottom: 60px;
+  }
+  .description-grid {
+    display: inline;
+  }
+  .description-grid h4,
+  .description-grid h2 {
+    text-align: center;
+  }
+  .description-grid img {
+    max-width: 285px;
+    max-height: 215.5px;
+    display: block;
+    margin: 0 auto;
+    padding: 60px 0px 30px;
+  }
+
+  .food-box,
+  .photo-map {
+    display: inline;
+    max-width: 600px;
+  }
+
+  .item,
+  .photo-map iframe {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .photo-map img {
+    display: none;
+  }
+
+  .photo-map iframe {
+    max-height: 185px;
+    max-width: 370px;
+    padding-top: 30px;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding-top: 10px;
+    max-width: 370px;
+    margin: 0 auto;
+  }
+
+  .photo img {
+    height: 180px;
+    width: 180px;
+  }
+
+  .footer {
+    display: inline;
+    padding: 60px 10px 60px 10px;
+  }
+
+  .more {
+    display: none;
+  }
 }
