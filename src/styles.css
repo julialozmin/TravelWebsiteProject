@@ -57,6 +57,7 @@ button {
 
 img {
   object-fit: cover;
+  max-width: 100%;
 }
 
 ul {
@@ -149,10 +150,11 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
 .photo-map img,
 .photo-map iframe {
-  max-height: 185px;
-  max-width: 185px;
+  height: 185px;
+  width: 185px;
 }
 
 .food-details {
