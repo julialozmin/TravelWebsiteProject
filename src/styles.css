@@ -164,7 +164,7 @@ footer {
   margin: 0 0 24px;
 }
 .food-details button,
-.night-button {
+.theme-button {
   display: block;
   margin: 0 auto;
   background-color: var(--primary-color);
@@ -184,8 +184,9 @@ footer {
   margin-top: 50px;
 }
 
-.night-button {
+.theme-button {
   color: rgb(225, 225, 225, 0.7);
+  cursor: pointer;
 }
 
 .footer {
@@ -225,7 +226,7 @@ footer {
   }
 
   button,
-  .night-button {
+  .theme-button {
     padding: 10px 26px 10px 26px;
   }
 
