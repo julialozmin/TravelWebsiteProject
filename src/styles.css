@@ -94,7 +94,7 @@ footer {
   background-position: center;
   color: white;
 }
-.heroNight {
+.hero-night {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("/images/alberico-bartoccini-8m1lnTWzQgk-unsplash.jpg");
 }
@@ -114,6 +114,10 @@ footer {
   color: black;
 }
 
+.hero-night h4 {
+  opacity: 0.8;
+}
+
 .container {
   padding: 100px 0px 100px 0px;
   max-width: 1170px;
@@ -130,7 +134,7 @@ footer {
   background-color: var(--secondary-color);
 }
 
-.nightDark {
+.night-dark {
   background-color: var(--dark-color);
 }
 
@@ -161,7 +165,7 @@ footer {
   margin-top: 50px;
 }
 
-.semiDark {
+.semi-dark {
   background-color: var(--semi-dark-color);
 }
 
@@ -264,7 +268,7 @@ footer {
     display: inline;
   }
 
-  .nightDark {
+  .night-dark {
     background-color: rgb(18, 16, 29);
   }
 
